@@ -4,7 +4,8 @@
 // 2. YUI().use('placeholder', function (Y) { ...
 // 3. Y.Manager.Placeholder.install('css rule to scan and init placeholder support'); // when run under IE, this still install placeholder behavior in scaned nodes
 //
-YUI().add('placeholder', function (Y) {
+YUI.add('gallery-placeholder', function(Y) {
+ 
     var nativeSupport = ('placeholder' in document.createElement('input')),
         handleFocus = function () {
             this.removeClass('placeholder');
